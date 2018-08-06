@@ -1,0 +1,21 @@
+{% extends "layouts/master.html" %} {% block content %}
+
+<div class="row medium-margin-top">
+    <div class="col-md-12">
+
+        {% for employee in employees %}
+        <div class="box text-center">
+            <h3 class="text-center">
+                <a href="project.html">{{employee.Name}}</a>
+            </h3>
+            <h2 class="text-center">
+                <a href="project.html">{{employee.EmpId}}</a>
+            </h2>
+            <h3>
+                <a href="project.html">{{employee.Designation}}</a>
+            </h3>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
